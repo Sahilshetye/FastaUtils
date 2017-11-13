@@ -1,0 +1,28 @@
+{
+  "name": "fastautil",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "mocha bin/test/*Test.js"
+  },
+  "dependencies": {
+    "@types/chai": "^4.0.4",
+    "@types/mocha": "^2.2.44"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1"
+  },"keywords": [
+    "Fasta",
+    "fastaUtils",
+    "Typescript"
+  ],
+  "author": {
+    "name": "Sahil Shetye",
+    "email": "sahilshetye2606@gmail.com",
+    "url": "http://www.sahilshetye.com" 
+  },
+  "license": "ISC",
+  "main": "/bin/index.js"
+  
+}
