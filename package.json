@@ -1,7 +1,7 @@
 {
   "name": "fastautil",
   "version": "1.0.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "test": "mocha bin/test/*Test.js"
   },
@@ -28,5 +28,6 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sahilshetye/JavaUtils.git"
-  }
+  },
+  "description": "A Simple FastaUtility tool for fasta files.This modules is used for just parsing."
 }
