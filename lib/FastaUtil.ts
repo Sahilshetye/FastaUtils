@@ -1,5 +1,5 @@
 
-export  namespace FastaUtil{
+
  export interface IFastaObj{
      name:string;
      sequence:string;
@@ -14,10 +14,7 @@ export class IFasta<T extends IFastaObj>{
     // return this._instance;
     // }
 
-    // constructor(){
-    //     // return this._instance || (this._instance = new IFasta<T>());
-    // }
-    //;
+    
     parse(text:String):Array<T>{
        let obj=<T>{};
        obj.sequence="";
@@ -86,4 +83,4 @@ return fastafile;
     }
     }
  
-}
+

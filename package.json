@@ -1,6 +1,6 @@
 {
   "name": "fastautil",
-  "version": "1.0.4-alpha",
+  "version": "1.0.4-alpha2",
   "private": false,
   "scripts": {
     "test": "mocha bin/test/*Test.js"
