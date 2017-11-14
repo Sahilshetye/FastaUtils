@@ -3,5 +3,5 @@
  */
 
 
-
+export * from "./FastaUtil";
 
