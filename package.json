@@ -21,9 +21,12 @@
   "author": {
     "name": "Sahil Shetye",
     "email": "sahilshetye2606@gmail.com",
-    "url": "http://www.sahilshetye.com" 
+    "url": "https://github.com/Sahilshetye/JavaUtils" 
   },
   "license": "ISC",
-  "main": "/bin/index.js"
-  
+  "main": "/bin/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sahilshetye/JavaUtils.git"
+  }
 }
