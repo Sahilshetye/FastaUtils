@@ -1,11 +1,12 @@
 
+export  namespace FastaUtil{
  export interface IFastaObj{
      name:string;
      sequence:string;
      id?:number;
     }
 
- export class IFasta<T extends IFastaObj>{
+export class IFasta<T extends IFastaObj>{
     
     // private _instance:IFasta<T>;
 
@@ -17,7 +18,7 @@
     //     // return this._instance || (this._instance = new IFasta<T>());
     // }
     //;
-    parse(text:string):Array<T>{
+    parse(text:String):Array<T>{
        let obj=<T>{};
        obj.sequence="";
        obj.name="";
@@ -77,12 +78,12 @@ return fastafile;
     splitNchar(str:string,num:number):Array<String>{
         var i, _ref;
         num = num || 80;
-        var result = [];
+        var result:Array<String> = [];
         for (i = 0, _ref = str.length - 1; i <= _ref; i += num) {
           result.push(str.substr(i, num));
         }
         return result;
     }
     }
-
-
+ 
+}

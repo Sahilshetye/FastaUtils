@@ -2,11 +2,19 @@
   "compilerOptions": {
     "moduleResolution": "node",
     "module": "commonjs",
-    "target": "es6",
+    "target": "es5",
     "sourceMap": false,
     "watch": true,
-    "outDir": "bin"
+    "outDir": "bin",
+    "declaration": true,
+    "strict": true,
+    "noImplicitAny": false,
+    "removeComments": true,
+    "noLib":false ,
+    "preserveConstEnums": true,
+    "suppressImplicitAnyIndexErrors": true
   },
+  
   "include": [
     "./lib"
   ],
