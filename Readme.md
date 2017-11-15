@@ -15,6 +15,7 @@ $ npm install fastautil
 Usage
 -----
 
+#Reading
 ```js
 var fasta = require('fastautil').FastaUtil
 
@@ -33,15 +34,12 @@ CAGTCCTACTGCATGCATGCATGCATGCATCGATGCATGTCGACTGCATGCATGC\n');
 //       sequence: 'CAGTCCTACTGCATGCATGCATGCATGCATCGATGCATGTCGACTGCATGCATGC' }
 ```
 
-Reading
+#Writing
 ```js
 
 fastaData.write(object);
 
 ```
-
-
-For a more useful API, check the dependent module (https://github.com/Sahilshetye/FastaUtils).
 
 
 Contributing

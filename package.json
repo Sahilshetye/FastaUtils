@@ -1,6 +1,6 @@
 {
   "name": "fastautil",
-  "version": "1.0.4-alpha2",
+  "version": "1.1.0",
   "private": false,
   "scripts": {
     "test": "mocha bin/test/*Test.js"
@@ -21,13 +21,13 @@
   "author": {
     "name": "Sahil Shetye",
     "email": "sahilshetye2606@gmail.com",
-    "url": "https://github.com/Sahilshetye/JavaUtils" 
+    "url": "https://github.com/Sahilshetye/FastaUtils" 
   },
   "license": "ISC",
   "main": "bin/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sahilshetye/JavaUtils.git"
+    "url": "git+https://github.com/sahilshetye/FastaUtils.git"
   },
   "description": "A Simple FastaUtility tool for fasta files.This modules is used for just parsing.",
   "types": "./bin/*.d.ts"
