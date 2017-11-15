@@ -15,7 +15,7 @@ $ npm install fastautil
 Usage
 -----
 
-#Reading
+# Reading
 ```js
 var fasta = require('fastautil').FastaUtil
 
@@ -34,7 +34,7 @@ CAGTCCTACTGCATGCATGCATGCATGCATCGATGCATGTCGACTGCATGCATGC\n');
 //       sequence: 'CAGTCCTACTGCATGCATGCATGCATGCATCGATGCATGTCGACTGCATGCATGC' }
 ```
 
-#Writing
+# Writing
 ```js
 
 fastaData.write(object);
