@@ -1,20 +1,26 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var IFasta = (function () {
-    function IFasta() {
+class FastaObj {
+    constructor() {
+        this.name = "";
+        this.sequence = "";
+        this.id = 1;
     }
-    IFasta.prototype.parse = function (text) {
-        var obj = {};
-        obj.sequence = "";
-        obj.name = "";
-        obj.id = 1;
+}
+class Fasta {
+    // private _instance:IFasta<T>;
+    // public getInstance():IFasta<T>{
+    // return this._instance;
+    // }
+    parse(text) {
+        var obj = new FastaObj();
         if (!text || text.length === 0)
             return [];
         var arr = text.split("\n");
         var seq = new Array();
+        //get the object for parsing.....
         var name1;
-        for (var _i = 0, arr_1 = arr; _i < arr_1.length; _i++) {
-            var line = arr_1[_i];
+        for (var line of arr) {
             if (line[0] === '>' || line[0] === ';') {
                 if (obj.sequence != "") {
                     seq.push({ id: obj.id, name: obj.name, sequence: obj.sequence });
@@ -24,13 +30,15 @@ var IFasta = (function () {
                 obj.name = line.slice(1);
             }
             else {
+                // if(obj.sequence===undefined){
+                // obj.sequence=line;}
                 obj.sequence += line;
             }
         }
         seq.push(obj);
         return seq;
-    };
-    IFasta.prototype.write = function (obj) {
+    }
+    write(obj) {
         var fastafile = "";
         for (var ob = 0; ob < obj.length; ob++) {
             ;
@@ -40,8 +48,13 @@ var IFasta = (function () {
                 fastafile += "\n";
         }
         return fastafile;
-    };
-    IFasta.prototype.splitNchar = function (str, num) {
+    }
+    // public setOptions(opt:T){
+    //     obj.name=opt.name;
+    //     this.obj.sequence=opt.sequence;
+    //     // this.obj.id= opt.id;
+    // }
+    splitNchar(str, num) {
         var i, _ref;
         num = num || 80;
         var result = [];
@@ -49,7 +62,7 @@ var IFasta = (function () {
             result.push(str.substr(i, num));
         }
         return result;
-    };
-    return IFasta;
-}());
-exports.IFasta = IFasta;
+    }
+}
+exports.Fasta = Fasta;
+module.exports.fasta = new Fasta();

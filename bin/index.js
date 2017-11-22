@@ -1,2 +1,5 @@
 "use strict";
-exports.FastaUtil = require("./FastaUtil");
+/**
+ * Created by shdba on 10/24/17.
+ */
+module.exports.Fasta = require("./FastaUtil");

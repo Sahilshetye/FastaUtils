@@ -3,5 +3,5 @@
  */
 
 
-exports.FastaUtil = require("./FastaUtil");
+module.exports.Fasta = require("./FastaUtil");
 

@@ -1,4 +1,7 @@
+
 # fastautil
+[![Build Status](https://travis-ci.org/Sahilshetye/FastaUtils.svg?branch=master)](https://travis-ci.org/Sahilshetye/FastaUtils)
+
 > Auxillary Fasta parser utils for  working  with fasta object.just Read and parse.
 
 
@@ -17,10 +20,11 @@ Usage
 
 ## Reading
 ```js
-var fasta = require('fastautil').FastaUtil
+var fastautil = require('fastautil');
 
-var fastaData = new fasta.IFasta();
-var object = fastaData.parse('>sequence1\n\
+fasta== new fastautil.Fasta();
+
+var object = fasta.parse('>sequence1\n\
 ATGCACGTCACGTCAGTACTCGTCAGTAC\n\
 >sequence2\n\
 CAGTCCTACTGCATGCATGCATGCATGCATCGATGCATGTCGACTGCATGCATGC\n');
@@ -37,7 +41,7 @@ CAGTCCTACTGCATGCATGCATGCATGCATCGATGCATGTCGACTGCATGCATGC\n');
 ## Writing
 ```js
 
-fastaData.write(object);
+fasta.write(object);
 
 ```
 

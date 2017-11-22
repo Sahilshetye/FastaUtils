@@ -1,12 +1,18 @@
 
 
- export interface IFastaObj{
-     name:string;
-     sequence:string;
-     id?:number;
-    }
+export interface IFastaObj{
+    name:string;
+    sequence:string;
+    id?:number;
+}
 
-export class IFasta<T extends IFastaObj>{
+class FastaObj implements IFastaObj{
+    name:string="";
+    sequence:string="";
+    id?:number=1;
+}
+
+export class Fasta<T extends IFastaObj>{
     
     // private _instance:IFasta<T>;
 
@@ -16,11 +22,8 @@ export class IFasta<T extends IFastaObj>{
 
     
     parse(text:String):Array<T>{
-       let obj=<T>{};
-       obj.sequence="";
-       obj.name="";
-       obj.id=1;
-       
+       var obj= new FastaObj();
+
        if (!text ||text.length===0)
        return [];
        var arr:string[]=text.split("\n");
@@ -47,7 +50,7 @@ export class IFasta<T extends IFastaObj>{
             }
             
        }
-    seq.push(obj);
+    seq.push(<T>obj);
     return seq;
         }
 
@@ -82,5 +85,5 @@ return fastafile;
         return result;
     }
     }
- 
 
+module.exports.fasta= new Fasta();
