@@ -1,5 +1,3 @@
-///<reference types="../../bin/index"/>
-
 
 import  fast =require( '../FastaUtil');
 import assert= require("mocha");

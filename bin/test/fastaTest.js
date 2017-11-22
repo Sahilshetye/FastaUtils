@@ -1,5 +1,4 @@
 "use strict";
-///<reference types="../../bin/index"/>
 Object.defineProperty(exports, "__esModule", { value: true });
 const fast = require("../FastaUtil");
 const chai = require("chai");

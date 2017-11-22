@@ -2,20 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f0a761fe-eef0-4a42-b2a4-b3188587dba5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.travis.yml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/FastaUtil.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/index.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/test/fastaTest.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Readme.md" afterPath="$PROJECT_DIR$/Readme.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/FastaUtil.ts" afterPath="$PROJECT_DIR$/lib/FastaUtil.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/index.ts" afterPath="$PROJECT_DIR$/lib/index.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/test/fastaTest.js" afterPath="$PROJECT_DIR$/bin/test/fastaTest.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/test/fastaTest.ts" afterPath="$PROJECT_DIR$/lib/test/fastaTest.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tsconfig.json" afterPath="$PROJECT_DIR$/tsconfig.json" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,18 +39,18 @@
       <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="18" column="12" lean-forward="true" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+            <state relative-caret-position="261">
+              <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fastaTest.ts" pinned="false" current-in-tab="false">
+      <file leaf-file-name="fastaTest.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/test/fastaTest.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+            <state relative-caret-position="90">
+              <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -112,7 +101,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="18">
@@ -179,10 +168,10 @@
         <option value="$PROJECT_DIR$/lib/FileObject.ts" />
         <option value="$PROJECT_DIR$/lib/FastaObject.ts" />
         <option value="$PROJECT_DIR$/lib/FastaUtil.ts" />
-        <option value="$PROJECT_DIR$/lib/test/fastaTest.ts" />
         <option value="$PROJECT_DIR$/Readme.md" />
         <option value="$PROJECT_DIR$/tsconfig.json" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/lib/test/fastaTest.ts" />
       </list>
     </option>
   </component>
@@ -231,6 +220,17 @@
               <item name="FastaUtil" type="b2602c69:ProjectViewProjectNode" />
               <item name="FastaUtil" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="FastaUtil" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FastaUtil" type="462c0819:PsiDirectoryNode" />
+              <item name="bin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FastaUtil" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FastaUtil" type="462c0819:PsiDirectoryNode" />
+              <item name="bin" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -265,7 +265,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.test.js">
+  <component name="RunManager" selected="Mocha.FastaUtil Tests">
+    <configuration name="FastaUtil Tests" type="mocha-javascript-test-runner" factoryName="Mocha" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui>bdd</ui>
+      <extra-mocha-options>--require ts-node/register</extra-mocha-options>
+      <test-kind>SUITE</test-kind>
+      <test-file>$PROJECT_DIR$/lib/test/fastaTest.ts</test-file>
+      <test-names>
+        <name value="FastaUtil Tests" />
+      </test-names>
+    </configuration>
     <configuration name="FastaUtil Tests.making Model" type="mocha-javascript-test-runner" factoryName="Mocha" temporary="true" nameIsGenerated="true">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -679,15 +693,17 @@
       <method />
     </configuration>
     <configuration name="test.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="test.js" working-dir="$PROJECT_DIR$/bin/test" />
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Node.js.bin/www" />
       <item index="1" class="java.lang.String" itemvalue="Mocha.FastaUtil Tests.making Model" />
       <item index="2" class="java.lang.String" itemvalue="Node.js.test.js" />
+      <item index="3" class="java.lang.String" itemvalue="Mocha.FastaUtil Tests" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Node.js.test.js" />
-        <item index="1" class="java.lang.String" itemvalue="Mocha.FastaUtil Tests.making Model" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Mocha.FastaUtil Tests" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.test.js" />
+        <item index="2" class="java.lang.String" itemvalue="Mocha.FastaUtil Tests.making Model" />
       </list>
     </recent_temporary>
   </component>
@@ -709,13 +725,21 @@
       <workItem from="1508877022559" duration="27214000" />
       <workItem from="1511378304669" duration="5551000" />
       <workItem from="1511386928413" duration="380000" />
-      <workItem from="1511387506101" duration="2875000" />
+      <workItem from="1511387506101" duration="3217000" />
     </task>
+    <task id="LOCAL-00001" summary="Added Travis CI and improved some bugs">
+      <created>1511390422495</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1511390422495</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FastaUtil_Tests_making_Model - 2017.11.22 at 14h 28m 43s.xml">
-      <configuration name="FastaUtil Tests.making Model" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="FastaUtil_Tests - 2017.11.22 at 16h 45m 08s.xml">
+      <configuration name="FastaUtil Tests" configurationId="mocha-javascript-test-runner" />
     </history-entry>
     <history-entry file="FastaUtil_Tests_making_Model - 2017.11.22 at 14h 39m 32s.xml">
       <configuration name="FastaUtil Tests.making Model" configurationId="mocha-javascript-test-runner" />
@@ -746,7 +770,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36020000" />
+    <option name="totallyTimeSpent" value="36362000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1056" extended-state="0" />
@@ -785,6 +809,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added Travis CI and improved some bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Travis CI and improved some bugs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -994,14 +1022,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.travis.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="18" column="12" lean-forward="true" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/FastaObject.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -1014,14 +1034,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/test/fastaTest.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
           <folding />
         </state>
       </provider>
@@ -1055,14 +1067,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.npmignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1075,6 +1079,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="1" column="5" lean-forward="true" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/test/fastaTest.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
           <folding />
         </state>
       </provider>
